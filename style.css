@@ -534,7 +534,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid #cfe3b1;
     box-sizing: border-box;
   }
   
@@ -560,8 +560,7 @@ body {
     }
   }
   
-  
- 
+
   /* Contact Section */
   .contact-section {
     padding: 50px;
