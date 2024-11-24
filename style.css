@@ -510,6 +510,57 @@ body {
       width: 90%;
     }
   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .about-btn {
+    flex: 1;
+    min-width: 280px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  .about-btn h2 {
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-btn {
+      margin-bottom: 20px;
+    }
+  
+    .about-btn h2 {
+      font-size: 16px;
+    }
+  }
+  
+  
  
   /* Contact Section */
   .contact-section {
