@@ -8,7 +8,7 @@ body, ul, h1, h2, h3, p {
 body {
   width: 100%;
   height: 100vh;
-  background-image: url('bg\ kopsup.png');
+  background-image: url('background\ kopsup.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
