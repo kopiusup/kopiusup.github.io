@@ -140,6 +140,8 @@ body {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 .menu-item h3 {
@@ -158,6 +160,7 @@ body {
   margin-bottom: 10px;
   color: #333;
 }
+
 
 /* Location Section */
 #location {
