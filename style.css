@@ -200,24 +200,7 @@ body {
 
   .about-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 50px;
-    background-color: #f9f9f9;
-  }
-  
-  .about-section h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-weight: bolder;
-    text-align: center;
-  }
-  
-  .about-section {
-    display: flex;
-    flex-direction: row; 
+    flex-direction: column; /* Menjaga h2 di atas p */
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -238,17 +221,37 @@ body {
     line-height: 1.6;
     margin-top: 10px;
     text-align: center;
-    width: 60%;
+    width: 80%; /* Mengubah lebar untuk responsivitas */
   }
   
   .about-section img {
-    width: 40%;
+    width: 30%; /* Mengurangi ukuran gambar */
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    margin-left: 20px;
+    margin-top: 20px; /* Menambahkan margin atas untuk jarak antara h2 dan gambar */
   }
-
+  
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      padding: 30px;
+    }
+  
+    .about-section h2 {
+      font-size: 24px; /* Ukuran font lebih kecil di perangkat lebih kecil */
+    }
+  
+    .about-section p {
+      width: 90%; /* Memperbesar lebar p di perangkat lebih kecil */
+      font-size: 14px; /* Ukuran font lebih kecil di perangkat lebih kecil */
+    }
+  
+    .about-section img {
+      width: 80%; /* Ukuran gambar lebih besar di perangkat lebih kecil */
+    }
+  }
+  
   @media (max-width: 480px) {
     .about-section h2 {
       font-size: 20px;
@@ -260,7 +263,7 @@ body {
     }
   
     .about-section img {
-      width: 90%;
+      width: 90%; /* Ukuran gambar lebih besar di perangkat lebih kecil */
     }
   }
  
