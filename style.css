@@ -197,6 +197,34 @@ body {
     height: 450px;
     border: 0;
   }
+
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .about-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    width: 50%;
+  }
+  
+  .about-section img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
   
   /* Contact Section */
   .contact-section {
