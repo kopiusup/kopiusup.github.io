@@ -207,7 +207,7 @@ body {
   }
   
   .about-section h2 {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 20px;
     font-weight: bolder;
     text-align: center;
@@ -221,7 +221,6 @@ body {
     color: #141414;
     line-height: 1.6;
     width: 50%;
-    text-align: center;
   }
   
   .about-section img {
