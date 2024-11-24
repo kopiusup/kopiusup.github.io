@@ -9,7 +9,7 @@ body, ul, h1, h2, h3, p {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('bg\ kosup.jpg');
+    background-image: url('background\ kopsu.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -19,7 +19,7 @@ body, ul, h1, h2, h3, p {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url('bg\ kosup.jpg') no-repeat center center/cover;
+    background: url('background\ kopsu.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
