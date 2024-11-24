@@ -27,6 +27,13 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .background {
+      background-attachment: scroll; 
+  }
+}
+      
+
 /* Navbar */
 .navbar {
   display: flex;
