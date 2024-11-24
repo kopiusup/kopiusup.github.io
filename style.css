@@ -16,22 +16,30 @@ body {
 }
 
 @keyframes moveBackground {
-  0%{
+  0% {
       background-position: 0 0;
   }
-  50%{
+  50% {
       background-position: 100% 100%;
   }
-  100%{
+  100% {
       background-position: 0 0;
   }
 }
 
 @media (max-width: 768px) {
-  .background {
-      background-attachment: scroll; 
+  body {
+      background-attachment: scroll;
+      animation: none;
   }
 }
+
+@media (max-width: 480px) {
+  body {
+      background-size: auto 100%;
+  }
+}
+
       
 
 /* Navbar */
