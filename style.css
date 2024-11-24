@@ -200,8 +200,10 @@ body {
 
   .about-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
     padding: 50px;
     background-color: #f9f9f9;
   }
@@ -211,20 +213,18 @@ body {
     margin-bottom: 20px;
     font-weight: bolder;
     text-align: center;
-
   }
   
   .about-section p {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #141414;
+    font-size: 16px;
+    color: #555;
     line-height: 1.6;
-    width: 50%;
+    margin-top: 0;
+    text-align: center;
   }
   
   .about-section img {
-    width: 40%;
+    width: 60%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
