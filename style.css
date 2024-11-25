@@ -316,106 +316,124 @@ body {
 }
 
 
-/*menu*/
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-header {
+/* Menu Section */
+.menu-section {
   text-align: center;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  background-color: #f9f9f9;
 }
 
-h3 {
-  margin: 0;
-  color: #333;
-}
-
-p {
-  margin: 0;
-  padding: 0;
+.menu-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
   color: #333;
 }
 
 .menu-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-  gap: 15px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .menu-item {
   background-color: #fff;
-  border-radius: 0;
-  border: 1px solid #dcdcdc; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   text-align: center;
-  padding: 10px;
-  transform: translateY(0);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  cursor: pointer;
-  overflow: hidden;
+  opacity: 0;
+  animation: slideIn 0.5s ease-in-out forwards;
+  transition: transform 0.3s ease;
 }
+
 .menu-item img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 0;
-  margin-bottom: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .menu-item h3 {
-  font-size: 1.1em;
+  font-size: 1.3rem;
   color: #333;
-  margin: 5px 0 5px;
+  margin: 10px 0;
 }
 
 .menu-item p {
-  font-size: 0.8em;
-  color: #666;
-  margin: 5px 0;
+  font-size: 1rem;
+  color: #777;
+  margin: 10px 0;
 }
 
 .menu-item .price {
-  font-size: 1em;
+  font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: #e0a96d;
+  margin-top: 10px;
+  transition: color 0.3s ease;
 }
 
+/* Efek Hover */
 .menu-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.menu-item:hover .price {
+  color: #d35400;
+}
+
+/* Efek Klik */
 .menu-item:active {
-  animation: bounce 0.5s ease-in-out;
+  transform: scale(0.98); /* Perkecil sedikit saat ditekan */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-@keyframes bounce {
+/* Animasi: Fade In dan Slide In */
+@keyframes fadeIn {
   0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
+    opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .menu-container {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
 @media (max-width: 480px) {
-  .menu-container {
-    grid-template-columns: 1fr; 
+  .menu-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .menu-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .menu-item p {
+    font-size: 0.9rem;
+  }
+
+  .menu-item .price {
+    font-size: 1rem;
   }
 }
 
