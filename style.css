@@ -351,14 +351,15 @@ p {
 /* Menu Item Styling */
 .menu-item {
   background-color: #fff;
-  border-radius: 8px; 
-  border: 1px solid #e0e0e0; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 12px;
+  border: 1px solid #dcdcdc; /* border lebih kecil */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   transform: translateY(0);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .menu-item img {
