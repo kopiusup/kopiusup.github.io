@@ -10,3 +10,20 @@ navLinks.querySelectorAll('a').forEach(link => {
         navLinks.classList.remove('active');
     });
 });
+
+
+// Pilih semua elemen dengan kelas "menu-item"
+const menuItems = document.querySelectorAll('.menu-item');
+
+// Tambahkan event listener untuk setiap elemen menu-item
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    // Tambahkan kelas "active" untuk memulai animasi bounce
+    item.classList.add('active');
+
+    // Hapus kelas "active" setelah animasi selesai (500ms)
+    setTimeout(() => {
+      item.classList.remove('active');
+    }, 500); // Waktu sesuai dengan durasi animasi bounce di CSS
+  });
+});
