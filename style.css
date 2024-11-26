@@ -631,7 +631,7 @@ body {
   
 
 /* Copyright */
-#footer {
+footer {
   text-align: center;
   padding: 20px 0;
   background-color: #f1eaea;
@@ -642,6 +642,7 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
 }
+
 
   
   /* Responsive Design */
