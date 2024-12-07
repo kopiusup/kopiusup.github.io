@@ -27,3 +27,9 @@ menuItems.forEach(item => {
     }, 500); // Waktu sesuai dengan durasi animasi bounce di CSS
   });
 });
+
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2PBQRS8MPX');
